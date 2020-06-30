@@ -77,3 +77,53 @@ var a = 55.23553
 undefined
 a.toFixed(2)
 "55.24"
+
+
+///////////////
+isNaN > is not a number
+isNaN('a')
+true
+isNaN(44)
+false
+isNaN('fdfvfvv')
+true
+isNaN(53454)
+false
+
+var a = NaN
+undefined
+var b = 20
+undefined
+a+b
+NaN
+a-b
+NaN
+var c = 'a'
+undefined
+a+c
+"NaNa"
+typeof(a)
+"number"
+
+var a = NaN
+undefined
+var b = 20
+undefined
+a+b
+NaN
+a-b
+NaN
+var c = 'a'
+undefined
+a+c
+"NaNa"
+typeof(a)
+"number"
+a-c
+NaN
+var d =NaN
+undefined
+a-d
+NaN
+a+d
+NaN
