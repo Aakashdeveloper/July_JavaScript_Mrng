@@ -71,3 +71,88 @@ city.splice(2,2,'Pune','Boston')
 (2) ["Helsinki", "Venice"]
 city
 (7) ["Delhi", "London", "Pune", "Boston", "Innsburg", "Amsterdam", "Nice"]
+
+var city = ["Delhi", "London", "Paris", "Venice", "Innsburg", "Amsterdam", "Nice"]
+
+undefined
+city.indexOf('Mumbai')
+-1
+city.indexOf('Pune')
+-1
+city.indexOf('London')
+1
+city.indexOf('Amsterdam')
+5
+
+var a = ['a','b',3,4,'c']
+var b =[5,'d','c',1,'f']
+undefined
+a+b
+"a,b,3,4,c5,d,c,1,f"
+a.concat(b)
+(10) ["a", "b", 3, 4, "c", 5, "d", "c", 1, "f"]
+var c = [4,5,6]
+undefined
+a.concat(b,c)
+(13) ["a", "b", 3, 4, "c", 5, "d", "c", 1, "f", 4, 5, 6]
+c.concat(a,b)
+(13) [4, 5, 6, "a", "b", 3, 4, "c", 5, "d", "c", 1, "f"]
+
+var url = "https://developerfunnel.herokuapp.com/restaurants"
+undefined
+url.split('/')
+(4) ["https:", "", "developerfunnel.herokuapp.com", "restaurants"]
+var a = url.split('/')
+undefined
+a[a.length-1]
+"restaurants"
+
+var subject="JavaScript"
+undefined
+subject.split('')
+(10) ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+
+var a = ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+undefined
+a.toString()
+"J,a,v,a,S,c,r,i,p,t"
+a.toString().replace(/,/g,'')
+"JavaScript"
+
+var city = ["Delhi", "London", "Paris", "Venice", "Innsburg", "Amsterdam", "Nice"]
+
+undefined
+city.sort()
+(7) ["Amsterdam", "Delhi", "Innsburg", "London", "Nice", "Paris", "Venice"]
+city.sort().reverse()
+(7) ["Venice", "Paris", "Nice", "London", "Innsburg", "Delhi", "Amsterdam"]
+city
+(7) ["Venice", "Paris", "Nice", "London", "Innsburg", "Delhi", "Amsterdam"]
+
+var city = ["Delhi", "London", "Paris", "Venice", "Innsburg", "Amsterdam", "Nice"]
+
+undefined
+city.reverse()
+(7) ["Nice", "Amsterdam", "Innsburg", "Venice", "Paris", "London", "Delhi"]
+var city = ["Delhi", "London", "Paris", "Venice", "Innsburg", "Amsterdam", "Nice"]
+undefined
+city.includes('Delhi')
+true
+city.includes('Mumbai')
+false
+
+
+var a = Array.of(6,8,9)
+undefined
+a
+(3) [6, 8, 9]
+
+//Es7
+var city = ["Delhi", "London",[1,2,3,['a','b','c'],4], "Paris", "Venice", "Innsburg", "Amsterdam", "Nice"]
+undefined
+city[2][3][0]
+"a"
+city.flat()
+(12) ["Delhi", "London", 1, 2, 3, Array(3), 4, "Paris", "Venice", "Innsburg", "Amsterdam", "Nice"]
+city.flat(2)
+(14) ["Delhi", "London", 1, 2, 3, "a", "b", "c", 4, "Paris", "Venice", "Innsburg", "Amsterdam", "Nice"]
