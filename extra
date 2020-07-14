@@ -23,18 +23,17 @@ Ecma 7
     > maps,filter
 > Hoisting
 > Clousers
-////////////////////////
 > object 
 > Transpile
 > this 
 > Es6
     > classes
     > import export
-
-> Prototypes
-> Call/Apply
 > package.JSON
 > npm
+////////////////////////
+> Prototypes
+> Call/Apply
 > DoM
 > Geolocation
 > Form validation
@@ -69,3 +68,10 @@ git commit -m "first commit"
 git push
 
 git pull
+
+
+////package.json///
+**NodeJs must be install in system
+> Navigate to the folder
+> npm init -y
+> npm i @babel/core @babel/preset-env @babel/register
