@@ -31,14 +31,14 @@ Ecma 7
     > import export
 > package.JSON
 > npm
-////////////////////////
 > Prototypes
 > Call/Apply
 > DoM
+////////////////////////
+> Calc
 > Geolocation
 > Form validation
 > Event
-> Calc
 > currenyConvertor
 > promis
 > async await
